@@ -3,7 +3,7 @@
 	require_once('Produtos/Produto.php');
 	require_once('Produtos/Short.php');
 	require_once('Produtos/Tenis.php');
-    require_once('Produtos/Camiseta.php');
+    	require_once('Produtos/Camiseta.php');
 
 	$tipo = $_POST["tipo"];
 	$marca = $_POST['marca'];
@@ -15,15 +15,15 @@
     
 	if($tipo == 'c'){
 		$manga = $_POST['manga'];
-    	$estampa = $_POST['estampa'];
+    		$estampa = $_POST['estampa'];
 		$conteudo = new Camiseta($tipo,$marca, $modelo, $tamanho, $cor, $data_lancamento, $ocasiao, $manga, $estampa);
 	}
-    elseif($tipo == 's'){
+    	elseif($tipo == 's'){
 		$conteudo = new Short($tipo,$marca, $modelo, $tamanho, $cor, $data_lancamento, $ocasiao);
 	}else{
 		$cadarco = $_POST['cadarco'];
         $conteudo = new Tenis($tipo,$marca, $modelo, $tamanho, $cor, $data_lancamento, $ocasiao,$cadarco);
-    }
+    	}
 
 	$conteudo->inserir($conteudo);
       
