@@ -54,7 +54,7 @@
                                 echo '<td>'. $row['estampa'] . '</td>';
 
                                 echo '<td width=250>';
-                                echo '<a class="btn btn-danger" href="excluir.php?id='.$row['idProduto'].'">Excluir</a>';
+                                echo '<a class="btn btn-danger" href="excluir.php?idProduto='.$row['idProduto'].'">Excluir</a>';
                                 echo '</td>';
                                 echo '</tr>';
                             }
@@ -99,14 +99,14 @@
                                 echo '<td>'. $row['ocasiao'] . '</td>';
 
                                 echo '<td width=250>';
-                                echo '<a class="btn btn-danger" href="excluir.php?id='.$row['idProduto'].'">Excluir</a>';
+                                echo '<a class="btn btn-danger" href="excluir.php?idProduto='.$row['idProduto'].'">Excluir</a>';
                                 echo '</td>';
                                 echo '</tr>';
                             }
                             Conexao::desconectar();
                             ?>
                         </tbody>
-                    </table>
+                    </ta    ble>
                         <br>
                             <br>
                 </div>
@@ -148,7 +148,7 @@
                                 echo '<td>'. $row['cadarco'] . '</td>';
 
                                 echo '<td width=250>';
-                                echo '<a class="btn btn-danger" href="excluir.php?id='.$row['idProduto'].'">Excluir</a>';
+                                echo '<a class="btn btn-danger" href="excluir.php?idProduto='.$row['idProduto'].'">Excluir</a>';
                                 echo '</td>';
                                 echo '</tr>';
                             }
