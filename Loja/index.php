@@ -80,8 +80,6 @@
                                 <th scope="col">cor</th>
                                 <th scope="col">data_lancamento</th>
                                 <th scope="col">ocasiao</th>
-                                <th scope="col">manga</th>
-                                <th scope="col">estampa</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -92,18 +90,16 @@
                             foreach($pdo->query($sql)as $row)
                             {
                                 echo '<tr>';
-                                echo '<th scope="row">'. $row['id'] . '</th>';
+                                echo '<th scope="row">'. $row['idProduto'] . '</th>';
                                 echo '<td>'. $row['marca'] . '</td>';
                                 echo '<td>'. $row['modelo'] . '</td>';
                                 echo '<td>'. $row['tamanho'] . '</td>';
                                 echo '<td>'. $row['cor'] . '</td>';
                                 echo '<td>'. $row['data_lancamento'] . '</td>';
                                 echo '<td>'. $row['ocasiao'] . '</td>';
-                                echo '<td>'. $row['manga'] . '</td>';
-                                echo '<td>'. $row['estampa'] . '</td>';
 
                                 echo '<td width=250>';
-                                echo '<a class="btn btn-danger" href="excluir.php?id='.$row['id'].'">Excluir</a>';
+                                echo '<a class="btn btn-danger" href="excluir.php?id='.$row['idProduto'].'">Excluir</a>';
                                 echo '</td>';
                                 echo '</tr>';
                             }
@@ -129,10 +125,9 @@
                                 <th scope="col">modelo</th>
                                 <th scope="col">tamanho</th>
                                 <th scope="col">cor</th>
-                                <th scope="col">data_lancamento</th>
+                                <th scope="col">lancamento</th>
                                 <th scope="col">ocasiao</th>
-                                <th scope="col">manga</th>
-                                <th scope="col">estampa</th>
+                                <th scope="col">cadarço</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -143,18 +138,17 @@
                             foreach($pdo->query($sql)as $row)
                             {
                                 echo '<tr>';
-                                echo '<th scope="row">'. $row['id'] . '</th>';
+                                echo '<th scope="row">'. $row['idProduto'] . '</th>';
                                 echo '<td>'. $row['marca'] . '</td>';
                                 echo '<td>'. $row['modelo'] . '</td>';
                                 echo '<td>'. $row['tamanho'] . '</td>';
                                 echo '<td>'. $row['cor'] . '</td>';
                                 echo '<td>'. $row['data_lancamento'] . '</td>';
                                 echo '<td>'. $row['ocasiao'] . '</td>';
-                                echo '<td>'. $row['manga'] . '</td>';
-                                echo '<td>'. $row['estampa'] . '</td>';
+                                echo '<td>'. $row['cadarco'] . '</td>';
 
                                 echo '<td width=250>';
-                                echo '<a class="btn btn-danger" href="excluir.php?id='.$row['id'].'">Excluir</a>';
+                                echo '<a class="btn btn-danger" href="excluir.php?id='.$row['idProduto'].'">Excluir</a>';
                                 echo '</td>';
                                 echo '</tr>';
                             }

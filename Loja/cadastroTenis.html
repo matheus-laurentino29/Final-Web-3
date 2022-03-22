@@ -20,7 +20,10 @@
             <div class="col-md-12 order-md-1">
                 <form class="needs-validation" action="cadastrar.php" method="post">
 
+                    <input type="hidden" name="tipo" value="t">
+
                                         <!--Primeira coluna-->
+
                     <div class="row">
                         <div class="col-md-6 mb-3">
                                 <label for="modelo">Modelo</label>
@@ -53,8 +56,8 @@
                             <label for="cadarco">Cadarço</label>
                             <select class="custom-select d-block w-100" id="cadarco" name="cadarco" required="">
                                 <option value="">Escolha...</option>
-                                <option value="Ação">Sim</option>
-                                <option value="Aventura">Não</option>
+                                <option value="S">Sim</option>
+                                <option value="N">Não</option>
                             </select>
                         </div>
 
@@ -62,17 +65,17 @@
                             <label for="marca">Marca</label>
                             <select class="custom-select d-block w-100" id="marca" name="marca" required="">
                                 <option value="">Escolha...</option>
-                                <option value="Ação">Nike</option>
-                                <option value="Aventura">Adidas</option>
-                                <option value="Comédia">Puma</option>
-                                <option value="Romance">Lacoste</option>
+                                <option value="Nike">Nike</option>
+                                <option value="Adidas">Adidas</option>
+                                <option value="Puma">Puma</option>
+                                <option value="Lacoste">Lacoste</option>
                             </select>
                         </div>
 						
 						<div class="col-md-6 mb-3">
-							<label for="modelo">Ocasião</label>
-							<input type="text" class="form-control" id="modelo" name="modelo">
-					</div>
+							<label for="ocasiao">Ocasião</label>
+							<input type="text" class="form-control" id="ocasiao" name="ocasiao">
+					    </div>
                     </div>
                
                     <button class="btn btn-primary btn-lg btn-block" type="submit">Cadastrar</button>

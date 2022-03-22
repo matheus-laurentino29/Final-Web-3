@@ -12,13 +12,13 @@
 
 			$pdo = Conexao::conectar();
 			
-			$sql = 'INSERT INTO conteudos(tipo,marca,modelo,tamanho,cor,data_lancamento,ocasiao,manga,estampa)
-					VALUES(?,?,?,?,?,?,?,?,?)';
+			$sql = 'INSERT INTO produtos(tipo,marca,modelo,tamanho,cor,data_lancamento,ocasiao)
+					VALUES(?,?,?,?,?,?,?)';
 			
 			$q = $pdo->prepare($sql);
  
 			$q->execute(array('s',$short->marca, $short->modelo, $short->tamanho, $short->cor,
-             $short->data_lancamento, $short->ocasiao, $short->manga, $short->estampa));
+             $short->data_lancamento, $short->ocasiao));
 				
 			Conexao::desconectar();
 
