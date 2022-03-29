@@ -105,7 +105,8 @@
                                 echo '<td>'. $row['quantidade'] . '</td>';
 
                                 echo '<td width=250>';
-                                echo '<a class="btn btn-danger" href="excluirshort.php?idShort='.$row['idShort'].'">Excluir</a>';
+                                echo '<a class="btn btn-danger" href="excluirshort.php?idShort='.$row['idShort'].'">Excluir</a>' . '     ';
+                                echo '<a class="btn btn-warning" href="cadastroShorts.html?idShort='.$row['idShort'].'">Editar</a>';
                                 echo '</td>';
                                 echo '</tr>';
                             }

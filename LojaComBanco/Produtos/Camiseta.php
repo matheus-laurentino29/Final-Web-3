@@ -42,7 +42,7 @@
 			$q = $pdo->prepare($sql);
  
 			$q->execute(array('c',$camiseta->marca, $camiseta->modelo, $camiseta->tamanho, $camiseta->cor,
-             $camiseta->data_lancamento, $camiseta->ocasiao, $camiseta->manga, $camiseta->estampa,$quantidade->quantidade));
+             $camiseta->data_lancamento, $camiseta->ocasiao, $camiseta->manga, $camiseta->estampa,$camiseta->quantidade));
 				
 			Conexao::desconectar();
 

@@ -22,10 +22,10 @@
 		$conteudo = new Camiseta($tipo,$marca, $modelo, $tamanho, $cor, $data_lancamento, $ocasiao, $manga, $estampa,$quantidade);
 	}
     elseif($tipo == 's'){
-		$conteudo = new Short($tipo,$marca, $modelo, $tamanho, $cor, $data_lancamento, $ocasiao,$quantidade);
+		$conteudo = new Short($tipo,$marca, $modelo, $tamanho, $cor, $data_lancamento, $ocasiao, $quantidade);
 	}else{
 		$cadarco = $_POST['cadarco'];
-        $conteudo = new Tenis($tipo,$marca, $modelo, $tamanho, $cor, $data_lancamento, $ocasiao,$cadarco,$quantidade);
+        $conteudo = new Tenis($tipo,$marca, $modelo, $tamanho, $cor, $data_lancamento, $ocasiao, $cadarco, $quantidade);
     }
 
 	$conteudo->inserir($conteudo);

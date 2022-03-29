@@ -18,7 +18,7 @@
 			$q = $pdo->prepare($sql);
  
 			$q->execute(array('s',$short->marca, $short->modelo, $short->tamanho, $short->cor,
-             $short->data_lancamento, $short->ocasiao,$quantidade->quantidade));
+             $short->data_lancamento, $short->ocasiao,$short->quantidade));
 				
 			Conexao::desconectar();
 
