@@ -26,6 +26,15 @@
 
 		}
 
+       // public function alterar(Short $short){
+        //    $pdo = Conexao::conectar();
+       //    $muda= 'UPDATE `bdshort` SET `cor`= '',`modelo` ='Sair' WHERE `bdshort`.`idShort` = 7';
+       //     $q = $pdo->prepare($sql);
+       //     Conexao::desconectar();
+
+	//		header('Location: index.php');
+      //  }
+
     }
 
 ?>
